@@ -180,6 +180,7 @@ p {
 .hero-actions,
 .pill-row,
 .contact-list,
+.contact-actions,
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -220,8 +221,10 @@ p {
   border-left: 1px solid var(--line);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
+  text-align: center;
 }
 
 .stat-grid,
@@ -455,6 +458,8 @@ p {
 }
 
 .email-card h2 {
+  font-size: 1.75rem;
+  line-height: 1.15;
   overflow-wrap: anywhere;
 }
 
@@ -462,6 +467,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.credential-badge {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  min-height: 270px;
 }
 
 .contact-card form {
@@ -591,13 +603,19 @@ textarea {
     line-height: 1;
   }
 
+  .email-card h2 {
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
   .lead {
     font-size: 1rem;
   }
 
   .hero-actions .button,
   .hero-actions .button-secondary,
-  .contact-card .button {
+  .contact-card .button,
+  .contact-card .button-secondary {
     width: 100%;
   }
 
