@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Contact</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="nav-card" aria-label="Primary">
+          <a class="brand" href="/">
+            <span class="brand-mark">YN</span>
+            <span>Your Name</span>
+          </a>
+          <div class="nav-links">
+            <a class="nav-link" data-nav href="/">Home</a>
+            <a class="nav-link" data-nav href="/projects">Projects</a>
+            <a class="nav-link" data-nav href="/about">About</a>
+            <a class="nav-link" data-nav href="/contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="content-card section" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h1>Make it easy for the right people to reach you.</h1>
+          <p class="lead">
+            Keep the options lightweight: direct email, one or two social links,
+            and a short contact form.
+          </p>
+        </section>
+
+        <section class="section contact-grid">
+          <article class="contact-card" data-reveal>
+            <h3>Send a message</h3>
+            <form>
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" />
+              </label>
+              <label>
+                Project or note
+                <textarea
+                  name="message"
+                  placeholder="Tell me what you’re working on."
+                ></textarea>
+              </label>
+              <button class="button" type="submit">Send Inquiry</button>
+            </form>
+          </article>
+
+          <aside class="contact-card" data-reveal>
+            <h3>Other ways to connect</h3>
+            <div class="contact-list">
+              <span class="tag">Email</span>
+              <span class="tag">LinkedIn</span>
+              <span class="tag">GitHub</span>
+            </div>
+            <p>
+              Replace these placeholders with real links, and if you prefer,
+              wire the form up to an email service later.
+            </p>
+            <strong>Availability</strong>
+            <p>
+              Add a sentence here about freelance work, full-time roles, or
+              collaborations.
+            </p>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Swap placeholder channels with your real contact details.</span>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/about">About</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>
