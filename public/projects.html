@@ -29,15 +29,78 @@
           <p class="eyebrow">Selected Work</p>
           <h1>Projects grouped by the kind of work they show.</h1>
           <p class="lead">
-            Each project includes space for a screenshot, short summary,
-            technologies, and status. The image blocks are placeholders until
-            real screenshots are available.
+            Each project includes space for screenshots, short summaries,
+            technologies, and status. Featured work is separated from practice
+            and placeholder projects so it is easier to scan.
           </p>
+        </section>
+
+        <section class="section project-section featured-project" data-reveal>
+          <div class="project-section-header">
+            <p class="eyebrow">Featured Project</p>
+            <h2>ResQMesh Website</h2>
+          </div>
+
+          <article class="project-card project-feature-card" data-reveal>
+            <div
+              class="project-gallery"
+              data-image-switcher
+            >
+              <figure class="project-screenshot" aria-live="polite">
+                <div class="project-slide-viewport">
+                  <div class="project-slide-track" data-switcher-track>
+                    <img
+                      src="/images/resqmesh%20website%20screenshots/resqmesh%20web%20homepage.PNG"
+                      alt="ResQMesh public landing website homepage"
+                    />
+                    <img
+                      src="/images/resqmesh%20website%20screenshots/admin%20dashboard.PNG"
+                      alt="ResQMesh secured admin command-center dashboard"
+                    />
+                  </div>
+                </div>
+                <figcaption data-switcher-caption>Public landing site</figcaption>
+              </figure>
+              <div class="project-gallery-controls" aria-label="Change ResQMesh screenshot">
+                <button
+                  class="gallery-arrow"
+                  type="button"
+                  data-switcher-prev
+                  aria-label="Show previous ResQMesh screenshot"
+                >
+                  &#8592;
+                </button>
+                <button
+                  class="gallery-arrow"
+                  type="button"
+                  data-switcher-next
+                  aria-label="Show next ResQMesh screenshot"
+                >
+                  &#8594;
+                </button>
+              </div>
+            </div>
+            <div class="project-feature-content">
+              <span class="tag">Website + Admin Dashboard</span>
+              <h3>Emergency response platform web experience</h3>
+              <p>
+                Website<br />
+                The ResQMesh website includes both the public landing site and
+                the secured admin command-center. The landing page introduces
+                the system, provides information for users, supports
+                registration, contact, password reset, and app downloads, while
+                the admin dashboard manages civilian accounts, rescuers, rescue
+                teams, mesh devices, distress deployments, reports, online
+                department chats, and operational monitoring.
+              </p>
+              <div class="project-meta">Landing Website - Admin Dashboard - Operational Monitoring</div>
+            </div>
+          </article>
         </section>
 
         <section class="section project-section" data-reveal>
           <div class="project-section-header">
-            <p class="eyebrow">Section 01</p>
+            <p class="eyebrow">Section 02</p>
             <h2>Web Development</h2>
             <p>
               Websites and browser-based projects that show layout, navigation,
@@ -70,7 +133,7 @@
 
         <section class="section project-section" data-reveal>
           <div class="project-section-header">
-            <p class="eyebrow">Section 02</p>
+            <p class="eyebrow">Section 03</p>
             <h2>School Projects</h2>
             <p>
               Coursework and academic projects can live here, with enough
@@ -103,7 +166,7 @@
 
         <section class="section project-section" data-reveal>
           <div class="project-section-header">
-            <p class="eyebrow">Section 03</p>
+            <p class="eyebrow">Section 04</p>
             <h2>Practice and Experiments</h2>
             <p>
               Smaller builds, UI experiments, and learning exercises that show
@@ -136,7 +199,7 @@
       </main>
 
       <footer class="site-footer">
-        <span>Project screenshots can be added later by replacing each placeholder.</span>
+        <span>ResQMesh uses real screenshots; other project placeholders can be replaced later.</span>
         <div class="footer-links">
           <a href="/">Home</a>
           <a href="/about">About</a>

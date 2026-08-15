@@ -22,3 +22,27 @@ const observer = new IntersectionObserver(
 document.querySelectorAll("[data-reveal]").forEach((element) => {
   observer.observe(element);
 });
+
+document.querySelectorAll("[data-image-switcher]").forEach((switcher) => {
+  const track = switcher.querySelector("[data-switcher-track]");
+  const caption = switcher.querySelector("[data-switcher-caption]");
+  const previousButton = switcher.querySelector("[data-switcher-prev]");
+  const nextButton = switcher.querySelector("[data-switcher-next]");
+  const captions = ["Public landing site", "Admin command-center"];
+  let activeIndex = 0;
+
+  const updateSlide = () => {
+    track.style.transform = `translateX(-${activeIndex * 100}%)`;
+    caption.textContent = captions[activeIndex];
+  };
+
+  previousButton.addEventListener("click", () => {
+    activeIndex = activeIndex === 0 ? captions.length - 1 : activeIndex - 1;
+    updateSlide();
+  });
+
+  nextButton.addEventListener("click", () => {
+    activeIndex = activeIndex === captions.length - 1 ? 0 : activeIndex + 1;
+    updateSlide();
+  });
+});
