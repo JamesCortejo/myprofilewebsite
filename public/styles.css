@@ -309,6 +309,12 @@ p {
   gap: 1.25rem;
 }
 
+.mobile-feature-card {
+  display: grid;
+  grid-template-columns: minmax(16rem, 28rem) minmax(0, 1fr);
+  align-items: center;
+}
+
 .project-gallery {
   display: grid;
   gap: 1rem;
@@ -343,6 +349,17 @@ p {
   object-fit: contain;
   object-position: top center;
   background: #ffffff;
+}
+
+.mobile-gallery {
+  width: min(100%, 28rem);
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.mobile-gallery .project-slide-viewport {
+  aspect-ratio: 9 / 16;
+  max-height: 42rem;
 }
 
 .project-screenshot figcaption {
@@ -528,6 +545,10 @@ textarea {
 }
 
 @media (max-width: 900px) {
+  .mobile-feature-card {
+    grid-template-columns: 1fr;
+  }
+
   .section-heading,
   .site-footer {
     align-items: flex-start;
@@ -622,6 +643,15 @@ textarea {
   .project-slide-viewport {
     aspect-ratio: 16 / 9;
     max-height: none;
+  }
+
+  .mobile-gallery {
+    width: min(100%, 22rem);
+    margin: 0 auto;
+  }
+
+  .mobile-gallery .project-slide-viewport {
+    aspect-ratio: 9 / 16;
   }
 
   .project-gallery-controls {

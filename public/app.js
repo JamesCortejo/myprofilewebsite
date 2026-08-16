@@ -28,7 +28,8 @@ document.querySelectorAll("[data-image-switcher]").forEach((switcher) => {
   const caption = switcher.querySelector("[data-switcher-caption]");
   const previousButton = switcher.querySelector("[data-switcher-prev]");
   const nextButton = switcher.querySelector("[data-switcher-next]");
-  const captions = ["Public landing site", "Admin command-center"];
+  const slides = track.querySelectorAll("img");
+  const captions = Array.from(slides).map((slide) => slide.dataset.caption || slide.alt);
   let activeIndex = 0;
 
   const updateSlide = () => {
