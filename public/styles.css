@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f4f7f4;
   --surface: rgba(255, 255, 252, 0.88);
   --surface-strong: #ffffff;
@@ -512,6 +512,36 @@ p {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.8fr);
+  align-items: start;
+  gap: 1.25rem;
+}
+
+
+.about-main-card {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(216, 238, 229, 0.42)),
+    var(--surface);
+}
+.about-side-stack {
+  display: grid;
+  align-content: start;
+  gap: 1.25rem;
+}
+
+.about-side-stack .timeline-card {
+  min-height: 0;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(216, 238, 229, 0.52)),
+    var(--surface);
+}
+
+.timeline-card p:last-child {
+  margin-bottom: 0;
+}
+
 .timeline-card strong,
 .contact-card strong {
   display: block;
@@ -548,6 +578,34 @@ p {
   justify-content: center;
   margin-top: 1rem;
   min-height: 270px;
+}
+
+
+.certificate-link {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+  text-align: center;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.topcit-logo {
+  display: block;
+  width: min(100%, 10rem);
+  height: auto;
+  border-radius: 8px;
+}
+
+.certificate-viewer {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 34rem;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
 }
 
 .contact-card form {
@@ -626,6 +684,7 @@ textarea {
 
   .hero-grid,
   .contact-grid,
+  .about-grid,
   .project-grid,
   .timeline-grid,
   .card-grid,
@@ -760,3 +819,7 @@ textarea {
     transition: none;
   }
 }
+
+
+
+
