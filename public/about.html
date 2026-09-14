@@ -1,30 +1,52 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>James Cortejo | About</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="/styles.css" />
+  <meta name="description" content="Learn about James Cortejo's BSIT background, Cisco networking certificate, TOPCIT Level 3 certification, AI literacy certificate, and technical direction." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="James Cortejo | About" />
+  <meta property="og:description" content="Learn about James Cortejo's BSIT background, Cisco networking certificate, TOPCIT Level 3 certification, AI literacy certificate, and technical direction." />
+  <meta property="og:image" content="/favicon.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="James Cortejo | About" />
+  <meta name="twitter:description" content="Learn about James Cortejo's BSIT background, Cisco networking certificate, TOPCIT Level 3 certification, AI literacy certificate, and technical direction." />
+  <meta name="twitter:image" content="/favicon.svg" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="page-shell">
-      <header class="site-header">
-        <nav class="nav-card" aria-label="Primary">
-          <a class="brand" href="/">
-            <span class="brand-mark">
-              <img src="/favicon.svg" alt="" aria-hidden="true" />
-            </span>
-            <span>James Cortejo</span>
-          </a>
-          <div class="nav-links">
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md nav-card" aria-label="Primary">
+        <a class="navbar-brand brand" href="/">
+          <span class="brand-mark">
+            <img src="/favicon.svg" alt="" aria-hidden="true" />
+          </span>
+          <span>James Cortejo</span>
+        </a>
+        <button
+          class="navbar-toggler nav-toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#primaryNavigation"
+          aria-controls="primaryNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-collapse" id="primaryNavigation">
+          <div class="navbar-nav nav-links ms-md-auto">
             <a class="nav-link" data-nav href="/">Home</a>
             <a class="nav-link" data-nav href="/projects">Projects</a>
             <a class="nav-link" data-nav href="/about">About</a>
             <a class="nav-link" data-nav href="/contact">Contact</a>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
       <main>
         <section class="content-card section" data-reveal>
@@ -40,23 +62,29 @@
         <section class="section">
           <div class="about-grid">
             <article class="timeline-card about-main-card" data-reveal>
-              <strong>Background</strong>
-              <p>
-                I am taking BSIT, where I continue to build my foundation in
-                information technology, software development, networking, and
-                practical problem solving.
-              </p>
-              <p>
-                I have earned a Cisco certification that supports my knowledge
-                in networking fundamentals and IT concepts.
-              </p>
-              <div class="credential-badge">
-                <div
-                  data-iframe-width="150"
-                  data-iframe-height="270"
-                  data-share-badge-id="2d63aa75-1e2a-4e57-984c-2690866c1163"
-                  data-share-badge-host="https://www.credly.com"
-                ></div>
+              <strong>Certifications</strong>
+              <div class="certificate-link certificate-link-first">
+                <strong>CCNA Certificate</strong>
+                <p>
+                  Cisco certification that supports my knowledge in networking
+                  fundamentals and IT concepts.
+                </p>
+                <div class="credential-badge">
+                  <div
+                    data-iframe-width="150"
+                    data-iframe-height="270"
+                    data-share-badge-id="2d63aa75-1e2a-4e57-984c-2690866c1163"
+                    data-share-badge-host="https://www.credly.com"
+                  ></div>
+                </div>
+                <a
+                  class="button-secondary"
+                  href="/docs/CCNASRWEUpdate20260914-20-svweq0_page-0001.jpg"
+                  data-certificate-modal
+                  data-certificate-title="CCNA Certificate"
+                >
+                  View Certificate
+                </a>
               </div>
               <div class="certificate-link">
                 <strong>TOPCIT Level 3</strong>
@@ -66,19 +94,47 @@
                   skills.
                 </p>
                 <img
-                  class="topcit-logo"
+                  class="certificate-logo"
                   src="/images/topcit-logo.jfif"
                   alt="TOPCIT logo"
-                />
+                loading="lazy" decoding="async" />
                 <a
                   class="button-secondary"
                   href="/docs/topcit-certificate_page-0001.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  data-certificate-modal
+                  data-certificate-title="TOPCIT Level 3"
                 >
                   View Certificate
                 </a>
-
+              </div>
+              <div class="certificate-link">
+                <strong>
+                  <a
+                    href="https://mapua.ascendlearning.asia/courses/introduction-to-ai-literacy-and-responsible-use/?inCohort=mapua-university%2Fcourses%2Fintroduction-to-ai-literacy-and-responsible-use%2Fcohorts%2Fclassof2026"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Introduction to AI Literacy and Responsible Use
+                  </a>
+                </strong>
+                <p>
+                  This course covers how AI systems work, how to use AI for
+                  learning and work, and how to evaluate AI outputs so informed
+                  decisions can be made when using AI responsibly.
+                </p>
+                <img
+                  class="certificate-logo"
+                  src="/images/acendlearning-logo.jfif"
+                  alt="Ascend Learning logo"
+                loading="lazy" decoding="async" />
+                <a
+                  class="button-secondary"
+                  href="/docs/ClassOf2026__issued_page-0001.jpg"
+                  data-certificate-modal
+                  data-certificate-title="Introduction to AI Literacy and Responsible Use"
+                >
+                  View Certificate
+                </a>
               </div>
             </article>
             <div class="about-side-stack">
@@ -101,6 +157,14 @@
                 <p>
                   I am building toward opportunities in IT, web development, and
                   software support where practical problem solving matters.
+                </p>
+              </article>
+              <article class="timeline-card" data-reveal>
+                <strong>Background</strong>
+                <p>
+                  I am taking BSIT, where I continue to build my foundation in
+                  information technology, software development, networking, and
+                  practical problem solving.
                 </p>
               </article>
             </div>
@@ -127,6 +191,7 @@
             <span class="tag">Git</span>
             <span class="tag">Cisco Networking</span>
             <span class="tag">TOPCIT Level 3</span>
+            <span class="tag">AI Literacy</span>
             <span class="tag">Responsive Design</span>
             <span class="tag">Problem Solving</span>
           </div>
@@ -143,10 +208,20 @@
       </footer>
     </div>
 
-    <script src="/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/reveal.js"></script>
+  <script src="/js/image-modal.js"></script>
+  <script src="/js/project-gallery.js"></script>
+  <script src="/js/certificate-modal.js"></script>
+  <script src="/app.js"></script>
     <script async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
   </body>
 </html>
+
+
+
+
 
 
 

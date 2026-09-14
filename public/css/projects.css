@@ -1,0 +1,243 @@
+﻿.project-grid {
+  grid-template-columns: 1fr;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.95fr) minmax(0, 1.25fr);
+  align-items: stretch;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  gap: 1.25rem;
+}
+
+.project-section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.project-section-header {
+  max-width: 50rem;
+}
+
+.project-section-header p:last-child {
+  margin-bottom: 0;
+}
+
+.featured-project {
+  padding-top: 0.5rem;
+}
+
+.mobile-feature-card {
+  grid-template-columns: minmax(14rem, 23rem) minmax(0, 1.35fr);
+}
+
+.project-gallery {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / 5;
+  align-self: start;
+  gap: 0.85rem;
+}
+
+.project-screenshot {
+  position: relative;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.project-slide-viewport {
+  height: 20rem;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.website-gallery .project-slide-viewport {
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.project-slide-track {
+  display: flex;
+  height: 100%;
+  transition: transform 420ms ease;
+}
+
+.project-slide-track img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+  background: #ffffff;
+}
+
+.mobile-gallery {
+  width: min(100%, 18rem);
+  max-width: 18rem;
+  margin: 0 auto;
+}
+
+.mobile-gallery .project-slide-viewport {
+  height: 24rem;
+}
+
+.device-feature-card {
+  align-items: start;
+}
+
+.device-feature-card .project-feature-content {
+  align-self: start;
+  grid-template-rows: auto auto auto auto;
+}
+
+.device-gallery {
+  align-self: start;
+  width: min(100%, 22rem);
+  margin: 0 auto;
+}
+
+.device-gallery .project-slide-viewport {
+  height: auto;
+  aspect-ratio: 3 / 4;
+}
+
+.device-gallery .project-slide-track img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.project-screenshot figcaption {
+  padding: 0.55rem 0.75rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.project-gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.85rem;
+}
+
+.gallery-arrow {
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid var(--accent-strong);
+  border-radius: 8px;
+  background: var(--accent-strong);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 12px 24px rgba(20, 50, 42, 0.18);
+  transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+}
+
+.gallery-arrow:hover,
+.gallery-arrow:focus-visible {
+  background: var(--accent);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.project-feature-content {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1 / 5;
+  align-self: stretch;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  gap: 0.75rem;
+}
+
+.project-description {
+  grid-row: 3;
+}
+
+.project-description p {
+  margin: 0 0 0.85rem;
+}
+
+.project-description ul {
+  margin: 0.7rem 0 0.85rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-description li + li {
+  margin-top: 0.35rem;
+}
+
+.project-description strong,
+.component-label {
+  color: var(--text);
+}
+
+.component-label {
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+.project-meta {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--accent-strong);
+  font-size: 0.92rem;
+}
+
+.project-card > .tag,
+.project-card > h3,
+.project-card > p,
+.project-card > .project-meta {
+  grid-column: 2;
+}
+
+.project-card > .tag,
+.project-feature-content > .tag {
+  grid-row: 1;
+}
+
+.project-card > h3,
+.project-feature-content > h3 {
+  grid-row: 2;
+}
+
+.project-card > p,
+.project-feature-content > p {
+  grid-row: 3;
+}
+
+.project-card > .project-meta,
+.project-feature-content > .project-meta {
+  grid-row: 4;
+  align-self: end;
+}
+
+.fullscreen-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+  min-height: 2.4rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--accent-strong);
+  border-radius: 8px;
+  background: rgba(22, 77, 67, 0.94);
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(20, 50, 42, 0.2);
+}
+
+.fullscreen-button:hover,
+.fullscreen-button:focus-visible {
+  background: var(--accent);
+}

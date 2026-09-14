@@ -1,0 +1,243 @@
+@media (max-width: 900px) {
+  .project-card,
+  .mobile-feature-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery,
+  .project-thumb,
+  .project-feature-content,
+  .project-card > .tag,
+  .project-card > h3,
+  .project-card > p,
+  .project-card > .project-meta {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .section-heading,
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-grid,
+  .contact-grid,
+  .about-grid,
+  .project-grid,
+  .timeline-grid,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .hero-copy,
+  .hero-panel {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 3.4rem;
+  }
+
+  h2 {
+    font-size: 2.35rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .nav-card {
+    align-items: stretch;
+    padding: 0.75rem 0;
+  }
+
+  .nav-collapse {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 0.35rem;
+  }
+
+  .nav-link,
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    margin-top: 1rem;
+  }
+
+  .hero-copy,
+  .hero-panel,
+  .feature-card,
+  .project-card,
+  .timeline-card,
+  .contact-card,
+  .content-card {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2.65rem;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .email-card h2 {
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions .button,
+  .hero-actions .button-secondary,
+  .contact-card .button,
+  .contact-card .button-secondary {
+    width: 100%;
+  }
+
+  .project-slide-viewport {
+    height: 14rem;
+  }
+
+  .website-gallery .project-slide-viewport,
+  .device-gallery .project-slide-viewport {
+    height: auto;
+  }
+
+  .mobile-gallery {
+    width: min(100%, 16rem);
+    margin: 0 auto;
+  }
+
+  .mobile-gallery .project-slide-viewport {
+    height: 22rem;
+  }
+
+  .project-gallery-controls {
+    justify-content: space-between;
+  }
+
+  .gallery-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .fullscreen-button {
+    top: 0.5rem;
+    right: 0.5rem;
+    min-height: 2.25rem;
+    padding: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .image-modal {
+    height: 100dvh;
+    place-items: stretch;
+    padding:
+      max(0.45rem, env(safe-area-inset-top))
+      max(0.45rem, env(safe-area-inset-right))
+      max(0.45rem, env(safe-area-inset-bottom))
+      max(0.45rem, env(safe-area-inset-left));
+  }
+
+  .image-modal-panel {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border-radius: 14px;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+  }
+
+  .image-modal-stage {
+    min-height: 0;
+    padding: 0.65rem;
+    overflow: auto;
+  }
+
+  .image-modal-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .image-modal-header,
+  .image-modal-footer {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.7rem;
+  }
+
+  .image-modal-close {
+    justify-self: end;
+    min-height: 2.35rem;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.86rem;
+  }
+
+  .image-modal-footer-actions {
+    justify-self: end;
+    gap: 0.55rem;
+  }
+
+  .image-modal-caption,
+  .image-modal-title {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .image-modal-label,
+  .image-modal-count {
+    font-size: 0.7rem;
+  }
+
+  .image-modal-next {
+    min-height: 2.35rem;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.86rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .button,
+  .button-secondary,
+  .nav-link,
+  .gallery-arrow,
+  .fullscreen-button,
+  .project-slide-track,
+  .image-modal-panel,
+  .image-modal-close,
+  .image-modal-next {
+    transition: none;
+    animation: none;
+  }
+}

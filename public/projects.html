@@ -1,29 +1,51 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>James Cortejo | Projects</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, and emergency communication device." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="James Cortejo | Projects" />
+  <meta property="og:description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, and emergency communication device." />
+  <meta property="og:image" content="/favicon.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="James Cortejo | Projects" />
+  <meta name="twitter:description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, and emergency communication device." />
+  <meta name="twitter:image" content="/favicon.svg" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
   <div class="page-shell">
     <header class="site-header">
-      <nav class="nav-card" aria-label="Primary">
-        <a class="brand" href="/">
-            <span class="brand-mark">
-              <img src="/favicon.svg" alt="" aria-hidden="true" />
-            </span>
-            <span>James Cortejo</span>
+      <nav class="navbar navbar-expand-md nav-card" aria-label="Primary">
+        <a class="navbar-brand brand" href="/">
+          <span class="brand-mark">
+            <img src="/favicon.svg" alt="" aria-hidden="true" />
+          </span>
+          <span>James Cortejo</span>
         </a>
-        <div class="nav-links">
-          <a class="nav-link" data-nav href="/">Home</a>
-          <a class="nav-link" data-nav href="/projects">Projects</a>
-          <a class="nav-link" data-nav href="/about">About</a>
-          <a class="nav-link" data-nav href="/contact">Contact</a>
+        <button
+          class="navbar-toggler nav-toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#primaryNavigation"
+          aria-controls="primaryNavigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-collapse" id="primaryNavigation">
+          <div class="navbar-nav nav-links ms-md-auto">
+            <a class="nav-link" data-nav href="/">Home</a>
+            <a class="nav-link" data-nav href="/projects">Projects</a>
+            <a class="nav-link" data-nav href="/about">About</a>
+            <a class="nav-link" data-nav href="/contact">Contact</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -46,14 +68,14 @@
         </div>
 
         <article class="project-card project-feature-card" data-reveal>
-          <div class="project-gallery" data-image-switcher>
+          <div class="project-gallery website-gallery" data-image-switcher>
             <figure class="project-screenshot" aria-live="polite">
               <div class="project-slide-viewport">
                 <div class="project-slide-track" data-switcher-track>
                   <img src="/images/resqmesh%20website%20screenshots/resqmesh%20web%20homepage.PNG"
-                    alt="ResQMesh public landing website homepage" data-caption="Public landing site" />
+                    alt="ResQMesh public landing website homepage" data-caption="Public landing site" loading="lazy" decoding="async" />
                   <img src="/images/resqmesh%20website%20screenshots/admin%20dashboard.PNG"
-                    alt="ResQMesh secured admin command-center dashboard" data-caption="Admin command-center" />
+                    alt="ResQMesh secured admin command-center dashboard" data-caption="Admin command-center" loading="lazy" decoding="async" />
                 </div>
               </div>
               <button class="fullscreen-button" type="button" data-fullscreen-button
@@ -102,15 +124,15 @@
               <div class="project-slide-viewport">
                 <div class="project-slide-track" data-switcher-track>
                   <img src="/images/resqmesh%20app%20screenshots/Screenshot_20260816_142526_ResQMesh.jpg"
-                    alt="ResQMesh mobile app screenshot 1" data-caption="Mobile app screen 1" />
+                    alt="ResQMesh mobile app screenshot 1" data-caption="Mobile app screen 1" loading="lazy" decoding="async" />
                   <img src="/images/resqmesh%20app%20screenshots/Screenshot_20260816_142532_ResQMesh.jpg"
-                    alt="ResQMesh mobile app screenshot 2" data-caption="Mobile app screen 2" />
+                    alt="ResQMesh mobile app screenshot 2" data-caption="Mobile app screen 2" loading="lazy" decoding="async" />
                   <img src="/images/resqmesh%20app%20screenshots/Screenshot_20260816_142539_ResQMesh.jpg"
-                    alt="ResQMesh mobile app screenshot 3" data-caption="Mobile app screen 3" />
+                    alt="ResQMesh mobile app screenshot 3" data-caption="Mobile app screen 3" loading="lazy" decoding="async" />
                   <img src="/images/resqmesh%20app%20screenshots/Screenshot_20260816_142548_ResQMesh.jpg"
-                    alt="ResQMesh mobile app screenshot 4" data-caption="Mobile app screen 4" />
+                    alt="ResQMesh mobile app screenshot 4" data-caption="Mobile app screen 4" loading="lazy" decoding="async" />
                   <img src="/images/resqmesh%20app%20screenshots/Screenshot_20260816_142610_ResQMesh.jpg"
-                    alt="ResQMesh mobile app screenshot 5" data-caption="Mobile app screen 5" />
+                    alt="ResQMesh mobile app screenshot 5" data-caption="Mobile app screen 5" loading="lazy" decoding="async" />
                 </div>
               </div>
               <button class="fullscreen-button" type="button" data-fullscreen-button
@@ -160,10 +182,10 @@
               <div class="project-slide-viewport">
                 <div class="project-slide-track" data-switcher-track>
                   <img src="/images/resqmesh%20device/20260912_194243.jpg"
-                    alt="ResQMesh communication device hardware view" data-caption="Communication device hardware" />
+                    alt="ResQMesh communication device hardware view" data-caption="Communication device hardware" loading="lazy" decoding="async" />
                   <img src="/images/resqmesh%20device/20260912_194705.jpg"
                     alt="ResQMesh communication device internal components"
-                    data-caption="Communication device hardware" />
+                    data-caption="Communication device hardware" loading="lazy" decoding="async" />
                 </div>
               </div>
               <button class="fullscreen-button" type="button" data-fullscreen-button
@@ -229,8 +251,16 @@
     </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/reveal.js"></script>
+  <script src="/js/image-modal.js"></script>
+  <script src="/js/project-gallery.js"></script>
+  <script src="/js/certificate-modal.js"></script>
   <script src="/app.js"></script>
 </body>
 
 </html>
+
+
 
