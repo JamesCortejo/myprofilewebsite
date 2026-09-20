@@ -46,8 +46,8 @@
 }
 
 .hero h1 {
-  max-width: 11ch;
-  font-size: clamp(3rem, 7vw, 5rem);
+  max-width: 16ch;
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
 }
 
 .hero-actions,
@@ -104,7 +104,7 @@
   align-items: end;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: clamp(1.25rem, 2vw, 1.75rem);
 }
 
 .hero + .section .section-heading {
@@ -121,6 +121,13 @@
   max-width: 26rem;
 }
 
+.content-card h1 {
+  max-width: 20ch;
+}
+
+.content-card .lead {
+  margin-bottom: 0;
+}
 .card-grid,
 .project-grid,
 .contact-grid,
@@ -138,7 +145,7 @@
 .timeline-card,
 .contact-card,
 .content-card {
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 1.5rem;
 }
 
@@ -146,6 +153,9 @@
   display: grid;
   align-content: start;
   gap: 0.8rem;
+  border-top: 3px solid rgba(31, 122, 100, 0.5);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(216, 238, 229, 0.35));
+  box-shadow: 0 10px 24px rgba(20, 50, 42, 0.07);
 }
 
 .feature-card h3,
@@ -157,11 +167,17 @@
   grid-template-columns: 1.1fr 0.9fr;
 }
 
+.contact-card {
+  box-shadow: 0 10px 24px rgba(20, 50, 42, 0.07);
+}
+
 .email-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
+  border-top: 3px solid rgba(31, 122, 100, 0.55);
+  box-shadow: var(--shadow);
 }
 
 .email-card h2 {
@@ -206,8 +222,10 @@ textarea {
   gap: 1rem;
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 2rem auto 0;
-  padding: 1rem 0 0;
+  padding: 1.25rem 0 0;
+  border-top: 1px solid var(--line);
   color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .contact-actions .button,

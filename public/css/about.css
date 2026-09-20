@@ -14,9 +14,11 @@
 
 .about-profile-card {
   min-height: 0;
+  border-top: 3px solid rgba(31, 122, 100, 0.42);
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(216, 238, 229, 0.52)),
     var(--surface);
+  box-shadow: 0 10px 24px rgba(20, 50, 42, 0.07);
 }
 
 .timeline-card p:last-child {
@@ -57,7 +59,7 @@
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(216, 238, 229, 0.42)),
     var(--surface-strong);
-  box-shadow: 0 12px 28px rgba(20, 50, 42, 0.07);
+  box-shadow: var(--shadow);
 }
 
 .certificate-card-heading {
@@ -154,9 +156,58 @@
   min-height: 0;
 }
 
+.mongodb-carousel-viewport {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
 .mongodb-certificate-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
   padding: 1.25rem 0 0;
   text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(0);
+  transition:
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 320ms ease;
+}
+
+.mongodb-certificate-slide.is-active {
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mongodb-certificate-slide.is-entering-from-right {
+  z-index: 3;
+  visibility: visible;
+  transform: translateX(105%);
+}
+
+.mongodb-certificate-slide.is-entering-from-left {
+  z-index: 3;
+  visibility: visible;
+  transform: translateX(-105%);
+}
+
+.mongodb-certificate-slide.is-leaving-to-left {
+  z-index: 1;
+  visibility: visible;
+  opacity: 0;
+  transform: translateX(-105%);
+}
+
+.mongodb-certificate-slide.is-leaving-to-right {
+  z-index: 1;
+  visibility: visible;
+  opacity: 0;
+  transform: translateX(105%);
 }
 
 .mongodb-certificate-slide[hidden] {
