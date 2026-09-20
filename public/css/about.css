@@ -2,26 +2,17 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.about-grid {
+.about-profile-section {
+  margin-top: 1.25rem;
+}
+
+.about-profile-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.8fr);
-  align-items: start;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
-.about-main-card {
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(216, 238, 229, 0.42)),
-    var(--surface);
-}
-
-.about-side-stack {
-  display: grid;
-  align-content: start;
-  gap: 1.25rem;
-}
-
-.about-side-stack .timeline-card {
+.about-profile-card {
   min-height: 0;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(216, 238, 229, 0.52)),
@@ -46,27 +37,86 @@
   gap: 0.75rem;
 }
 
-.credential-badge {
+.certification-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.certificate-column {
+  display: grid;
+  align-content: start;
+  gap: 1.5rem;
+}
+
+.certificate-card {
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(216, 238, 229, 0.42)),
+    var(--surface-strong);
+  box-shadow: 0 12px 28px rgba(20, 50, 42, 0.07);
+}
+
+.certificate-card-heading {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.certificate-card-heading > div {
+  min-width: 0;
+}
+
+.certificate-card-heading h3 {
+  margin-top: 0.2rem;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  line-height: 1.15;
+}
+
+.certificate-card-heading h3 a:hover,
+.certificate-card-heading h3 a:focus-visible {
+  color: var(--accent);
+}
+
+.certificate-card-kicker {
+  color: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.certificate-card-body {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  text-align: center;
+}
+
+.certificate-card-body p {
+  width: 100%;
+  margin: 0;
+}
+
+.certificate-card-media {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  width: 100%;
+}
+
+.credential-badge {
   min-height: 270px;
 }
 
-.certificate-link {
-  display: grid;
-  gap: 0.75rem;
-  justify-items: center;
-  text-align: center;
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--line);
-}
-
-.certificate-link-first {
-  margin-top: 1rem;
-  padding-top: 0;
-  border-top: 0;
+.certificate-logo-media {
+  min-height: 11rem;
 }
 
 .certificate-logo,
@@ -86,4 +136,80 @@
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #ffffff;
+}
+
+.mongodb-carousel-count {
+  flex: 0 0 auto;
+  padding: 0.4rem 0.65rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.mongodb-carousel-viewport,
+.mongodb-certificate-slide {
+  height: 37rem;
+  min-height: 0;
+}
+
+.mongodb-certificate-slide {
+  padding: 1.25rem 0 0;
+  text-align: center;
+}
+
+.mongodb-certificate-slide[hidden] {
+  display: none;
+}
+
+.mongodb-certificate-slide h3 {
+  min-height: 3rem;
+  max-width: 30rem;
+  margin: 0 auto;
+  line-height: 1.25;
+}
+
+.mongodb-certificate-description {
+  min-height: 8.5rem;
+  max-width: 34rem;
+  margin: 0.75rem auto 0;
+  line-height: 1.55;
+}
+.mongodb-certificate-slide .credential-badge {
+  margin-top: 0.75rem;
+}
+
+.mongodb-certificate-slide .button-secondary {
+  margin-top: 0.75rem;
+}
+
+.mongodb-carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.mongodb-carousel-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(31, 122, 100, 0.28);
+  border-radius: 8px;
+  background: var(--accent-strong);
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.mongodb-carousel-button:hover,
+.mongodb-carousel-button:focus-visible {
+  background: var(--accent);
+  transform: translateY(-1px);
 }
