@@ -13,6 +13,11 @@ const cacheStaticAssets = (res, filePath) => {
     return;
   }
 
+  if (filePath.endsWith(".css") || filePath.endsWith(".js")) {
+    res.setHeader("Cache-Control", "no-cache");
+    return;
+  }
+
   res.setHeader("Cache-Control", "public, max-age=604800");
 };
 
