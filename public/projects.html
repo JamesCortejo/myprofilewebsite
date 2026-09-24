@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>James Cortejo | Projects</title>
-  <meta name="description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, and emergency communication device." />
+  <meta name="description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, emergency communication device, and offline mesh firmware." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="James Cortejo | Projects" />
-  <meta property="og:description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, and emergency communication device." />
+  <meta property="og:description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, emergency communication device, and offline mesh firmware." />
   <meta property="og:image" content="/favicon.svg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="James Cortejo | Projects" />
-  <meta name="twitter:description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, and emergency communication device." />
+  <meta name="twitter:description" content="Explore James Cortejo's featured ResQMesh projects, including the website, mobile app, emergency communication device, and offline mesh firmware." />
   <meta name="twitter:image" content="/favicon.svg" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,9 +58,9 @@
         <p class="eyebrow">Selected Work</p>
         <h1>Projects grouped by the kind of work they show.</h1>
         <p class="lead">
-          Explore ResQMesh across its website, mobile application, and portable
-          communication device, including the interfaces, technologies, and
-          operational goals behind each part of the system.
+          Explore ResQMesh across its website, mobile application, portable
+          communication device, and the firmware that powers offline mesh
+          communication between emergency nodes.
         </p>
       </section>
 
@@ -242,10 +242,48 @@
           </div>
         </article>
       </section>
+
+      <section class="section project-section featured-project" data-reveal>
+        <div class="project-section-header">
+          <p class="eyebrow">Featured Project</p>
+          <h2>ResQMesh Device Firmware</h2>
+        </div>
+
+        <article class="project-card project-feature-card firmware-feature-card" data-reveal>
+          <div class="project-gallery firmware-gallery" data-image-switcher>
+            <figure class="project-screenshot" aria-live="polite">
+              <div class="project-slide-viewport">
+                <div class="project-slide-track" data-switcher-track>
+                  <img src="/images/resqmesh-firmware.PNG" alt="ResQMesh mesh node firmware status display"
+                    data-caption="ResQMesh mesh node device status display" loading="lazy" decoding="async" />
+                </div>
+              </div>
+              <button class="fullscreen-button" type="button" data-fullscreen-button
+                aria-label="Open ResQMesh device firmware status image fullscreen">
+                Fullscreen
+              </button>
+              <figcaption data-switcher-caption>ResQMesh mesh node device status display</figcaption>
+            </figure>
+          </div>
+          <div class="project-feature-content">
+            <span class="tag">Firmware + LoRa Mesh Node</span>
+            <h3>Offline emergency mesh node firmware</h3>
+            <p>
+              The ResQMesh device firmware powers the Orange Pi-based mesh nodes used for offline emergency
+              communication. Each node manages LoRa packet transmission, mesh discovery, text and voice message
+              relaying, distress alerts, GPS updates, local hotspot access, and synchronization with the ResQMesh
+              website when internet becomes available. The firmware also supports OLED status monitoring for node
+              identity, hotspot, firmware health, internet state, LoRa signal strength, packet activity, and battery
+              percentage through INA219 telemetry.
+            </p>
+            <div class="project-meta">LoRa Mesh - Orange Pi - Offline Communication - GPS - OLED Monitoring - Battery Telemetry</div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <span>ResQMesh connects its web platform, mobile application, and portable mesh device into one emergency communication system.</span>
+      <span>ResQMesh connects its web platform, mobile application, portable mesh device, and offline firmware into one emergency communication system.</span>
       <div class="footer-links">
         <a href="/">Home</a>
         <a href="/about">About</a>

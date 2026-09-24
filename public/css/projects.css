@@ -109,6 +109,26 @@
   object-position: center;
 }
 
+.firmware-feature-card {
+  align-items: start;
+}
+
+.firmware-gallery {
+  align-self: start;
+  width: min(100%, 30rem);
+  margin: 0 auto;
+}
+
+.firmware-gallery .project-slide-viewport {
+  height: auto;
+  aspect-ratio: 753 / 626;
+}
+
+.firmware-gallery .project-slide-track img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .project-screenshot figcaption {
   padding: 0.55rem 0.75rem;
   color: var(--muted);
