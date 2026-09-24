@@ -129,6 +129,25 @@
   object-position: center;
 }
 
+.forest-feature-card {
+  align-items: start;
+}
+
+.forest-gallery {
+  align-self: start;
+  width: 100%;
+}
+
+.forest-gallery .project-slide-viewport {
+  height: auto;
+  aspect-ratio: 108 / 50;
+}
+
+.forest-gallery .project-slide-track img {
+  object-fit: contain;
+  object-position: top center;
+}
+
 .project-screenshot figcaption {
   padding: 0.55rem 0.75rem;
   color: var(--muted);
