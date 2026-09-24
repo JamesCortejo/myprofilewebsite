@@ -148,6 +148,25 @@
   object-position: top center;
 }
 
+.tough-feature-card {
+  align-items: start;
+}
+
+.tough-gallery {
+  align-self: start;
+  width: 100%;
+}
+
+.tough-gallery .project-slide-viewport {
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
+.tough-gallery .project-slide-track img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .project-screenshot figcaption {
   padding: 0.55rem 0.75rem;
   color: var(--muted);
